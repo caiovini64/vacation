@@ -23,7 +23,7 @@
                         <th>Position</th>
                         <th>Date</th>
                         <th>Job Description</th>
-                        <th>Comments</th>
+                        
                     </tr>
                 </thead>
                 
@@ -33,7 +33,7 @@
                         <td class="position">Software Engineer</td>
                         <td class="date">25/03/2021</td>
                         <td class="jobdescription">github.com/jobs</td>
-                        <td class="comments">Look at mailbox</td>
+                        
                     </tr>
                 </tbody>
 
@@ -41,6 +41,42 @@
         </section>
 
     </main>
+
+    <div class="modal-overlay active">
+        <div class="modal">
+            <div class="form">
+                <h2>Nova Aplicação</h2>
+                <form action="">
+
+                    <div class="input-group">
+                        <label class="sr-only" for="company">Empresa</label>
+                        <input type="text" id="company" name="company" placeholder="Empresa" />
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="position">Cargo</label>
+                        <input type="text" id="position" name="position" placeholder="Cargo" />
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="date">Data</label>
+                        <input type="date" id="date" name="date"/>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="jobdescription">Descrição</label>
+                        <input type="text" id="jobdescription" name="jobdescription" placeholder="Descrição"/>
+                    </div>
+
+                    <div class="input-group actions">
+                        <a href="" class="button cancel"> Cancelar</a>
+                        <button class="button aplication">Salvar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
 
     
 </body>
