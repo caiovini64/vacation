@@ -1,0 +1,9 @@
+/* Global =============================== */
+
+:root{
+    --background: #182039;
+}
+
+body{
+    background: var(--background);
+}
