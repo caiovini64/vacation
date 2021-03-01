@@ -2,8 +2,116 @@
 
 :root{
     --background: #182039;
+    --green: #31B77F;
+    --white: #FFFAFA;
+    --green-accent: #52C092;
+    --dark-accent: #212B4E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 93.75%;
 }
 
 body{
     background: var(--background);
+    font-family:'Montserrat', sans-serif ;
+    
+}
+
+
+/* Main ================================= */
+
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+   
+}
+
+/* Buttons ================================= */
+
+
+
+
+/* Header =============================== */
+
+header{
+    padding: 2rem 0 8rem;
+    text-align: end;
+    width: min(90vw, 800px);
+    margin: auto;  
+    color: var(--green);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+/* Principal =============================== */
+
+#button-group{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.button.aplication{
+    width: 20%;
+    height: 30px;
+    border: none;
+    border-radius: 0.25rem;
+
+    color: var(--white);
+    background: var(--green);
+
+    cursor: pointer;
+    
+    
+}
+
+.button.aplication:hover{
+    background: var(--green-accent);
+}
+
+/* Table =========================== */
+
+#aplication {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#data-table{
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: var(--white);
+    opacity: 60%;
+}
+
+table thead th {
+    background: var(--dark-accent);
+    padding: 1rem 1rem;
+    text-align: left;
+}
+
+table tbody tr{
+    background: var(--dark-accent);
+    opacity: 40%;
+}
+
+table tbody tr:hover{
+    background: var(--dark-accent);
+    opacity: 80%;
+}
+
+table tbody td{
+    padding: 0.7rem 0.7rem;
+    text-align: left;
+   
+
 }
