@@ -12,7 +12,7 @@
     <header>Vacation</header>
     <main class="container">
         <section id="button-group">
-            <button class="button aplication">New Aplication</button>
+            <button class="button aplication " onclick="Modal.open()">New Aplication</button>
         </section>
         <section id="aplication">
             <table id="data-table">
@@ -23,18 +23,13 @@
                         <th>Position</th>
                         <th>Date</th>
                         <th>Job Description</th>
+                        <th></th>
                         
                     </tr>
                 </thead>
                 
                 <tbody>
-                    <tr>
-                        <td class="company">Github</td>
-                        <td class="position">Software Engineer</td>
-                        <td class="date">25/03/2021</td>
-                        <td class="jobdescription">github.com/jobs</td>
-                        
-                    </tr>
+                   
                 </tbody>
 
             </table>
@@ -42,11 +37,11 @@
 
     </main>
 
-    <div class="modal-overlay active">
+    <div class="modal-overlay">
         <div class="modal">
             <div class="form">
                 <h2>Nova Aplicação</h2>
-                <form action="">
+                <form action="" onsubmit="Form.submit(event)">
 
                     <div class="input-group">
                         <label class="sr-only" for="company">Empresa</label>
@@ -69,7 +64,7 @@
                     </div>
 
                     <div class="input-group actions">
-                        <a href="" class="button cancel"> Cancelar</a>
+                        <a href="" class="button cancel" onclick="Modal.close()"> Cancelar</a>
                         <button class="button aplication">Salvar</button>
                     </div>
 
@@ -77,6 +72,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 
     
 </body>
